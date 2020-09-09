@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../assets/styles/Carousel.css'
-import Slide1 from '../../assets/static/main/Slider-1.jpg'
+// import Slide1 from '../../assets/static/main/Slider-1.jpg'
 
 export default function Carrousel({children}) {
     return (
@@ -9,7 +9,7 @@ export default function Carrousel({children}) {
             <li id="carousel__slide1"
                 // tabindex="0"
                 className="carousel__slide">
-                    <img src={Slide1}/>
+                    {/* <img src={Slide1}/> */}
             <div className="carousel__snapper">
                 {/* <a href="#carousel__slide4"
                 className="carousel__prev">Go to last slide</a>
