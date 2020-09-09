@@ -1,0 +1,126 @@
+@import './Vars.css';
+
+.dropdown{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+ .dropdown-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dropdown-button button img{
+
+  }
+
+  .dropdown-button button{
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out; 
+    
+  }
+
+  .dropdown-button button p{
+    color : var(--mainWhite);
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .dropdown-content{
+    width: 80vw;
+    height: 400px;
+    display: none;
+    position: absolute;
+    background-color: var(--mainWhite);
+    top: 55px;
+    z-index: 3;
+    padding: 10px;
+  }
+  .dropdown-content__items{
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+  }
+
+  .dropdown-content__items-category{
+
+  }
+
+  .dropdown-content__items-category:hover + .dropdown-content__items-detail{
+    display: block;
+}
+
+  .dropdown-content__items-detail{
+    display: none;
+  }
+
+  .dropdown-content__items-publish{
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropdown-content__items-publish img{
+    width: 75%;
+  }
+.dropdown-content a {
+    color: black;
+    padding: 2.75px 2.75px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.8rem;
+  }
+  
+  .dropdown-content a span{
+    padding: 0 0.5rem;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-button {
+    background-color: var(--mainGray);
+    color: var(--mainOrange);
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 480px)  {
+    .dropdown{
+      margin: 0 5px;
+      width: 50px;
+      height: 50px;
+    }
+
+    .dropdown-button button p{
+      display: none;
+    }
+
+    .dropdown-content{
+      width: 100vw;
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 1024px)  {
+    .dropdown{
+      margin: 0 ;
+      width: 75px;
+      height: 50px;
+    }
+    .dropdown-content{
+      width: 100vw;
+    }
+  }
+
+  @media screen and (min-width: 1025px){
+    .dropdown{
+      margin: 0 5px;
+    }
+  }

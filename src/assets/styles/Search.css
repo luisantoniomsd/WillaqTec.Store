@@ -1,0 +1,44 @@
+@import './Vars.css';
+
+.search{
+  width: 100%;
+    display: grid;
+    grid-template-columns: auto 40px;
+    grid-template-rows: 40px;
+}
+
+.search-text__input{
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 100%;
+  background: #f1f1f1;
+  } 
+
+  .search-button__button{
+    /* text-transform: capitalize;
+    background-color: var(--mainOrange);
+    border: none;
+    color: var(--mainWhite);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: 40px; */
+    float: left;
+  
+    /* padding: 10px; */
+    background: var(--mainOrange);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-button__button img{
+    width: 90%;
+  }

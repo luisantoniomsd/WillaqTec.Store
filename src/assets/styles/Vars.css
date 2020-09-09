@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+:root{
+    --mainOrange: #FF5500;
+    --mainGray: #3D3D3D;
+    --mainDark: #232528;
+    --mainSmoke: #F0F0F0;
+    --mainWhite: #FFFFFF;
+    --mainSmokeWhiteDark: rgb(221, 220, 220);
+}

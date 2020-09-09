@@ -1,0 +1,20 @@
+@import './Vars.css';
+
+.cart-container__empty{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-container__empty-value{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-container__empty-value img{
+    width: 192px;
+}
+
+.cart-container__empty-value h1{
+    text-align: center;
+}

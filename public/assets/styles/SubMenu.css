@@ -1,0 +1,35 @@
+@import './Vars.css';
+
+.subheader{
+    background: var(--mainSmokeWhiteDark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+  }
+  
+  .subheader-container{
+    width: 80%;
+  }
+  
+  .subheader-container__nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  
+  .subheader-container__nav div{
+    padding: 0 10px;
+    font-size: 0.8rem;
+  }
+  
+  .subheader-container__nav div a{
+    color: var(--mainDark);
+    text-decoration: none;
+  }
+  
+  .subheader-container__nav div a:hover{
+    color: var(--mainOrange);
+    cursor: pointer;
+  }
+  

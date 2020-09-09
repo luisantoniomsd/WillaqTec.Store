@@ -1,0 +1,57 @@
+@import './Vars.css';
+
+.header{
+    background: var(--mainGray);
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 7.5% 7.5% 65% 20%;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.header-container__logo{
+
+}
+
+.header-container__logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.header-container__account{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.account-icon{
+    
+}
+
+.account-icon a{
+    
+}
+
+.account-icon button{
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    background: transparent;
+    border: none;
+    color: var(--mainWhite);
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    margin: 0.2rem 0.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.account-separator{
+    border: solid 0.5px var(--mainWhite);
+    margin: 5px;
+}

@@ -1,0 +1,64 @@
+@import './Vars.css';
+
+.dropdown{
+    position: relative;
+}
+
+ .dropdown-button{
+    padding: 0.25rem;
+  }
+
+  .dropdown-button button img{
+    /* width: 50%; */
+  }
+
+  .dropdown-button button{
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    margin: 0.2rem 0.5rem 0.2rem 0;
+    transition: all 0.5s ease-in-out; 
+  }
+
+  .dropdown-button button p{
+    color : var(--mainWhite);
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-content{
+    width: 1200px;
+    height: 400px;
+    display: none;
+    position: absolute;
+    background-color: var(--mainWhite);
+  }
+
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 5px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.8rem;
+  }
+  
+  .dropdown-content a span{
+    padding: 0 0.5rem;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropdown-button {
+    background-color: var(--mainGray);
+    color: var(--mainOrange);
+  }
+  

@@ -1,0 +1,27 @@
+@import './Vars.css';
+
+.search{
+    display: grid;
+    grid-template-columns: auto 50px;
+    grid-template-rows: auto;
+}
+
+.search-text__input{
+    width: 100%;
+    height: 44px;
+    font-size: 16px;
+    border-radius: 5px;
+  } 
+
+  .search-button__button{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    background-color: var(--mainOrange);
+    border: none;
+    color: var(--mainWhite);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: 50px;
+  }

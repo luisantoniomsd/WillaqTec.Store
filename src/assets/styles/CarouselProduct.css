@@ -1,0 +1,54 @@
+@import './Vars.css';
+
+.carouselproduct {
+    overflow: scroll;
+    width: 100%;
+    position: relative;
+}
+
+.carouselproduct__container {
+    transition: 450ms -webkit-transform;
+    transition: 450ms transform;
+    transition: 450ms transform, 450ms -webkit-transform;
+    font-size: 0;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.carouselproduct__container:hover .carousel-item {
+    opacity: 0.3;
+}
+
+.carouselproduct__container:hover .carousel-item:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 1;
+}
+
+
+    @media screen and (min-width: 320px) and (max-width: 480px)  {
+        .carouselproduct__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 1024px)  {
+        .carouselproduct__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;            
+        }
+    }
+
+    @media screen and (min-width: 1025px){
+        .carouselproduct__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;            
+        }
+    }   

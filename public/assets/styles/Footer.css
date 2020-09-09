@@ -1,0 +1,52 @@
+@import './Vars.css';
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--mainGray);
+  
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+  }
+  
+  .footer-container{
+    width: 80%;
+    padding: 1.5rem 0 0 0;
+  }
+  
+  .footer-container__content{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+  }
+  
+  .footer-container__content-column strong{
+    color: var(--mainWhite);
+    font-size: 1rem;
+    padding: 1.5rem 0;
+  }
+  .footer-container__content-column strong span{
+    color: var(--mainWhite);
+    font-size: 1rem;
+    padding-right: 5px;
+  }
+  
+  .footer-container__content-column p{
+    color: var(--mainWhite);
+    font-size: 0.75rem;
+    padding: 0.25rem 0;
+  }
+  
+  .footer-container__content-column p:hover{
+    color: var(--mainOrange);
+    cursor: pointer;
+  }
+  
+  .footer-container__footer{
+    text-align: center;
+    color: var(--mainWhite);
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
