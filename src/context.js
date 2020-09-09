@@ -33,7 +33,8 @@ class ProductProvider extends Component {
         //     tempProducts = [...tempProducts,singleItem];
         // });
 
-        const response = await fetch("http://store.willaqtec.com/api/v1/product/ProductFamily/ProductFamilyContent");
+        // const response = await fetch("http://store.willaqtec.com/api/v1/product/ProductFamily/ProductFamilyContent");
+        const response = await fetch("http://willaqtecapistore-prod.us-east-2.elasticbeanstalk.com//api/v1/product/ProductFamily/ProductFamilyContent");
         const data = await response.json();
         const tempProducts = data;
         this.setState(()=>{
@@ -42,7 +43,8 @@ class ProductProvider extends Component {
     }
 
     setMain = async () => {
-        const response = await fetch("http://store.willaqtec.com/api/v1/product/Main");
+        const response = await fetch("http://willaqtecapistore-prod.us-east-2.elasticbeanstalk.com//api/v1/product/Main");
+        // const response = await fetch("http://store.willaqtec.com/api/v1/product/Main");
         const data = await response.json();
         this.setState(()=>{
             return {data: data}
@@ -51,7 +53,8 @@ class ProductProvider extends Component {
 
     getItem = async(productFamilyId)=>{
 
-        const response = await fetch("http://store.willaqtec.com/api/v1/product/ProductFamily/ProductFamilyContent/"+productFamilyId);
+        const response = await fetch("http://willaqtecapistore-prod.us-east-2.elasticbeanstalk.com//api/v1/product/ProductFamily/ProductFamilyContent/"+productFamilyId);
+        // const response = await fetch("http://store.willaqtec.com/api/v1/product/ProductFamily/ProductFamilyContent/"+productFamilyId);
         const data = await response.json();
         
         const productFamily = data;
